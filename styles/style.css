@@ -1,3 +1,4 @@
+/* Global reset */
 * {
   margin: 0;
   padding: 0;
@@ -21,14 +22,16 @@
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
 }
 
+/* Body styles */
 body {
   background-color: var(--color-primary);
   font-family: "Poppins", sans-serif;
-  font-size: 1, 1rem;
+  font-size: 1.1rem;
   color: var(--color-white);
-  transition: all 0.4 ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
+/* Link styles */
 a {
   display: inline-block;
   text-decoration: none;
@@ -36,12 +39,14 @@ a {
   font-family: inherit;
 }
 
+/* Header styles */
 header {
   height: 100vh;
   color: var(--color-white);
   overflow: hidden;
 }
 
+/* Section styles */
 section {
   min-height: 100vh;
   width: 100%;
@@ -49,48 +54,23 @@ section {
   left: 0;
   top: 0;
   padding: 3rem 18rem;
-}
-
-.section {
   transform: translateY(-100%);
   transition: all 0.4s ease-in-out;
   background-color: var(--color-primary);
 }
 
-.sec1 {
+/* Active section style */
+.sec1, .sec2, .sec3, .sec4, .sec5 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: blue;
 }
 
-.sec2 {
-  display: none;
-  transform: translateY(0) scale(1);
-  background-color: rgb(141, 132, 5);
-}
-
-.sec3 {
-  display: none;
-  transform: translateY(0) scale(1);
-  background-color: rgb(255, 0, 0);
-}
-
-.sec4 {
-  display: none;
-  transform: translateY(0) scale(1);
-  background-color: rgb(255, 0, 128);
-}
-
-.sec5 {
-  display: none;
-  transform: translateY(0) scale(1);
-  background-color: rgb(60, 255, 0);
-}
-
+/* Active class for sections */
 .active {
   display: block;
   animation: scaleAnim 1s ease-in-out;
 }
+
 @keyframes scaleAnim {
   0% {
     transform: translateY(-100%) scaleY(0);
@@ -99,7 +79,7 @@ section {
     transform: translateY(0) scaleY(1);
   }
 }
-
+/* Controls styles */
 .controls {
   position: fixed;
   z-index: 10;
@@ -111,14 +91,8 @@ section {
   justify-content: center;
   transform: translateY(-50%);
 }
-.controls .active-btn {
-  background-color: var(--color-secondary) !important;
-  transition: all 0.4 ease-in-out;
-}
-.controls .active-btn i {
-  color: var(--color-white) !important;
-}
-.controls .control {
+
+.control {
   padding: 1rem;
   cursor: pointer;
   background-color: var(--color-grey-4);
@@ -131,8 +105,59 @@ section {
   margin: 0.7rem 0;
   box-shadow: var(--box-shadow-1);
 }
-.controls i {
+
+i {
   font-size: 1.2rem;
   color: var(--color-grey-2);
   pointer-events: none;
+}
+
+.active-btn {
+  background-color: var(--color-secondary) !important;
+  transition: all 0.4s ease-in-out;
+}
+.active-btn i {
+  color: var(--color-white) !important;
+}
+
+/* Independent components */
+.main-btn {
+  border-radius: 30px;
+  color: inherit;
+  font-weight: 600;
+  position: relative;
+  border: 1px solid var(--color-secondary);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.main-btn .btn-text {
+  padding: 0 2rem;
+}
+.main-btn .btn-icon {
+  background-color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+/* Galleri-stiler */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
 }/*# sourceMappingURL=style.css.map */

@@ -12,50 +12,79 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body class="main-content">
-    <header class="section sec1 header active">
-        <div class="header-content">
-            <div class="left-header">   
-                <div class="image">
-                  img. src=
-                </div>            
-            </div>
-            <div class="header-right">
-                <h1 class="name">
-                    Hi, I'm <span>Katrine Syre Økland</span>
-                    A student
-                </h1>
-                <p>
-                    raodom tekt
-                </p>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section class="section sec1 home" id="home"></section>
-        <section class="section sec2 about" id="about"></section>
-        <section class="section sec3 Portfolio" id="Portfolio"></section>
-        <section class="section sec4 blogs" id="blogs"></section>
-        <section class="section sec5 contacts" id="contacts"></section>
 
+    <main>
+        <!-- Home Section -->
+        <section class="section sec1 home active" id="home">
+            <h2>Welcome to My Portfolio!</h2>
+            <p></p>
+        </section>
+        
+        <!-- About Section -->
+        <section class="section sec2 about" id="about">
+            <h2>About Me</h2>
+            <p></p>
+            <p><strong>Skills:</strong> </p>
+        </section>
+
+       <section class="section sec3 portfolio" id="portfolio">
+    <div class="portfolio-container">
+        <h2>My Portfolio</h2>
+        
+        <!-- Portfolio Filter Section -->
+
+        <!-- Portfolio Items Section -->
+     
+            <h2>Foto</h2>
+            <div class="gallery">
+                <img src="bilder/53998057902_2c4dbf5a7f_o.jpg" alt="Bilde 1" />
+                <img src="bilder/53998926126_834c0234b6_w.jpg" alt="Bilde 2" />
+                <img src="bilder/53999253504_c9936a8373_w.jpg" alt="Bilde 3" />
+                <img src="bilder/53999254534_dc2acdd20d_w.jpg" alt="Bilde 4" />
+                <img src="bilder/manaquinnleg.jpg" alt="Bilde 5" />
+                <img src="bilder/54123942881_d482364478_w.jpg" alt="Bilde 6" />
+                <img src="bilder/54123097367_44b0a9d8f4_w.jpg" alt="Bilde 7" />
+                <img src="bilder/clark 1.jpg" alt="Bilde 8" />
+                <img src="bilder/sondre.jpg" alt="Bilde 9" />
+            </div>
+        </section>
+        
+            <!-- Add more items here -->
+
+    </div>
+</section>
+
+        
+        
+
+        <!-- Contacts Section -->
+        <section class="section sec5 contacts" id="contacts">
+            <h2>Contact Me</h2>
+            <p>If you would like to get in touch, please reach out through the following channels:</p>
+            <ul>
+                <li>Email: katrine.okland@gmail.com</li>
+                <li>LinkedIn: <a href="">LinkedIn Profile</a></li>
+                <li>GitHub: <a href="">GitHub Profile</a></li>
+                
+            </ul>
+        </section>
     </main>
     
     <div class="controls">
         <div class="control control-1 active-btn" data-id="home">
             <i class="fa-solid fa-house"></i>
         </div>
-        <div class="control control-2 " data-id="about">
+        <div class="control control-2" data-id="about">
             <i class="fa-solid fa-user"></i>
         </div>
-        <div class="control control-3 " data-id="Portfolio">
+        <div class="control control-3" data-id="portfolio">
             <i class="fa-solid fa-briefcase"></i>
         </div>
-        <div class="control control-4 " data-id="blogs">
-            <i class="fa-solid fa-newspaper"></i>
-        </div>
-        <div class="control control-5 " data-id="contacts">
+        <div class="control control-5" data-id="contacts">
             <i class="fa-solid fa-envelope"></i>
         </div>
     </div>
+    
     <script src="js/app.js"></script>
 </body>
 </html>
